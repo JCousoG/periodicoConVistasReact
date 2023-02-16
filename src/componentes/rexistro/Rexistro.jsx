@@ -11,7 +11,7 @@ function Rexistro() {
         SetContrasinal (evento.target.id)
     }
     return(
-        <>
+        <form>
             <label>
                 Usuario:
                 <input type="text" id={usuario} onInput={manexadorDoUsuario}/>
@@ -20,8 +20,11 @@ function Rexistro() {
                 Contrasinal:
                 <input type="password" id={contrasinal} onInput={manexadorDoContrasinal}/>
             </label>
+            <label>
+                <input type="submit" value="Enviar" />
+            </label>
         
-        </>
+        </form>
     )
 }
 export default Rexistro

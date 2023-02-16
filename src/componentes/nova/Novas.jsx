@@ -1,9 +1,10 @@
+import styles from "./nova.module.css"
 function Novas(props) {
     return(
-    <>
-    <h2>{props.titulo}</h2>
+    <article>
+    <h2 className={styles.nova}>{props.titulo}</h2>
     <p>{props.contido}</p>  
-     </>
+     </article>
     )
 }
 export default Novas
