@@ -18,9 +18,14 @@ function Navegador() {
         <li><a id="vistalocal" onClick={manejadorNav}>Local</a></li>
       </ul>
     </nav>
+    {vista === "vistaprincipal" &&  <h2>PORTADA</h2>}
+   
+      {vista === "vistalocal" && <h2>LOCAL</h2>}
+    <div id="noticias">
     {vista === "vistaprincipal" &&   <Vistaprincipal/>}
    
       {vista === "vistalocal" && <Vistalocal/>}
+    </div>
 
   </>
     )
